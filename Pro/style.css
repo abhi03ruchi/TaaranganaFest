@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Luckiest Guy', cursive;
+    background-color: black;
+    justify-content: center;
+    color: yellow;
+    background-image: url(landscape-view-drawing-palm-with-sunset-or-sunrise-background-illustration-concept-romantic-free-vector.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+}
+
+/* header{
+    width: 100%;
+    height: 100vh;
+    /* background-image: url(../landscape-view-drawing-palm-with-sunset-or-sunrise-background-illustration-concept-romantic-free-vector.webp);
+    background-repeat: no-repeat;
+    background-size: cover; 
+} */
+header h1 {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 75px;
+    background-color: 0009;
+    background-attachment: fixed;
+    color: orange;
+    text-shadow: 0 1px 0 greenyellow, 0 2px 0 greenyellow, 0 3px 0 greenyellow, 0 4px 0 greenyellow,
+        0 5px 0 greenyellow, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent,
+        0 9px 0 transparent, 0 10px 10px rgb(120, 181, 28);
+    /* text-shadow: 0 3px 0 greenyellow; */
+    margin-bottom: 30px;
+}
+
+/* ul {
+    list-style-type: none;
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding: 20px 20px;
+    box-shadow: 7px 7px 11px #061217, -7px -7px 11px #0c202b;
+  }
+  ul li a{
+    cursor: pointer;
+    position: relative;
+    color: yellow;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+  } */
+
+
+ul {
+    position: absolute;
+    /* left:50%;
+    top:50%; */
+    /* transform:translate(-50%,-50%); */
+    list-style: none;
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    border-radius: 15px;
+    box-shadow: 7px 7px 11px #061217, -7px -7px 11px #0c202b;
+}
+
+ul li {
+    /* display:inline-block; */
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 24px;
+    position: relative;
+    margin: 10px
+}
+
+ul li a {
+    text-decoration: none;
+    color: yellow;
+    font-weight: 700;
+}
+
+ul li:before {
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 20px;
+    left: 0;
+    top: 0;
+    border-top: 5px solid yellow;
+    border-left: 5px solid yellow;
+    border-radius: 5px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+ul li:hover:before {
+    opacity: 1;
+    left: -10px;
+    top: -10px;
+}
+
+ul li:after {
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 20px;
+    right: 0;
+    bottom: 0;
+    border-bottom: 5px solid yellow;
+    border-right: 5px solid yellow;
+    border-radius: 5px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+ul li:hover:after {
+    opacity: 1;
+    right: -10px;
+    bottom: -10px;
+}
+
+#iconbar {
+    color: white;
+    font-size: 4rem;
+    font-weight: bolder;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+main {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+section h3 {
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+}
+
+section h1 {
+    margin: 30px 0 20px 0;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+}
+
+/* section p {
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+  }
+   */
+section a {
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all 0.5s ease;
+}
+
+section .btnone {
+    /*background: #00b894;*/
+    background: #fff;
+    color: #000;
+}
+
+.btnone:hover {
+    background: red;
+    color: white;
+}
+
+section .btntwo {
+    background: red;
+    color: white;
+}
+
+.btntwo:hover {
+    background: #fff;
+    color: red;
+}
+
+.change_content:after {
+    content: "";
+    animation: changetext 10s infinite linear;
+    color: red;
+    text-shadow: 1px 0 0 greenyellow, 0 2px 0 greenyellow, 0 3px 0 greenyellow, 0 4px 0 greenyellow,
+        0 5px 0 greenyellow, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent,
+        0 9px 0 transparent, 0 10px 10px green;
+}
+
+@keyframes changetext {
+    0% {
+        content: "REGISTER";
+    }
+
+    20% {
+        content: "NOW";
+    }
+
+    35% {
+        content: "REGISTER";
+    }
+
+    60% {
+        content: "NOW";
+    }
+
+    80% {
+        content: "REGISTER";
+    }
+
+    100% {
+        content: "NOW";
+    }
+}
+
+footer {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+    background: rgba(0, 0, 0, 0);
+    padding: 20px;
+    /* position: relative; */
+}
+
+.main-content {
+    display: flex;
+}
+
+.main-content .box {
+    /* flex-basis: 0px; */
+    padding: 10px 75px 0 75px;
+    /* top | right | bottom | left */
+}
+
+.box h2 {
+    font-family: 'Luckiest Guy', cursive;
+    color: white;
+    /* border-style:double;
+    border-width: 5px; */
+    /* border-bottom: 10px;
+    border-color: white; */
+}
+
+.box .content {
+    margin: 2px;
+    /* top | right | bottom | left */
+}
+
+ .right .content{
+    padding: 1px 10px 5px 20px;
+    margin: 0px 10px 2px 30px ;
+    background-color: rgba(0, 0, 0, 0.1);
+     /* top | right | bottom | left  */
+} 
+button{
+    padding: 10px;
+    border-style: none;
+    border-radius: 40%;
+}
+
+button:hover {
+    /* width: 20px; */
+    background-color: #2f2e2e;
+    color: ghostwhite;
+}
+
+.content {
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.left .content .p {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.center .content .text {
+    text-align: justify;
+}
+
+
+
+input[type="submit"] {
+    background-color: gray;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: "100%"
+}
+
+hr {
+    border: double;
+    border-top: 3px double #fff;
+    color: #fff;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+}
+
+hr:after {
+    background: #fff;
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+}
+
+.wrapper .button {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    /* float: left; */
+    margin: 0 5px;
+    overflow: hidden;
+    background: white;
+    color: black;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-out;
+}
+
+.wrapper .button:hover {
+    width: 200px;
+}
+
+.wrapper .button .icon {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 50px;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper .button:nth-child(1):hover .icon {
+    background: #4267B2;
+}
+
+.wrapper .button:nth-child(2):hover .icon {
+    background: #1DA1F2;
+}
+
+.wrapper .button:nth-child(3):hover .icon {
+    background: #E1306C;
+}
+
+.wrapper .button:nth-child(4):hover .icon {
+    background: #ff0000;
+}
+
+.wrapper .button .icon i {
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper .button:hover .icon i {
+    color: #fff;
+}
+
+.wrapper .button span {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+    margin-bottom: 50px;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper .button:nth-child(1) span {
+    color: #4267B2;
+}
+
+.wrapper .button:nth-child(2) span {
+    color: #1DA1F2;
+}
+
+.wrapper .button:nth-child(3) span {
+    color: #E1306C;
+}
+
+.wrapper .button:nth-child(4) span {
+    color: #ff0000;
+}
+
+@media (min-width: 1200px) {}
+
+@media (max-width: 1050px) {
+    ul {
+        width: 100%;
+        text-align: left;
+        opacity: 0;
+        visibility: hidden;
+        flex-direction: column;
+    }
+
+    #iconbar {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    body {
+        background-image: url(../landscape-view-drawing-palm-with-sunset-or-sunrise-background-illustration-concept-romantic-free-vector.webp);
+        background-size: cover;
+        background-repeat: repeat;
+    }
+}
+
+@media (max-width: 760px) {
+    header h1 {
+        font-size: 50px;
+        /* margin-left: 150px; */
+    }
+
+    body {
+        background-image: url(../landscape-view-drawing-palm-with-sunset-or-sunrise-background-illustration-concept-romantic-free-vector.webp);
+        background-size: cover;
+        background-repeat: repeat;
+    }
+
+    #iconbar {
+        font-size: 3rem;
+        font-weight: bolder;
+        top: 90px;
+        right: 20px;
+        opacity: 1;
+        visibility: visible;
+
+    }
+
+    section h3 {
+        font-size: 20px;
+        font-weight: 200;
+        letter-spacing: 3px;
+        text-shadow: 1px 1px 2px black;
+        margin-top: 10px;
+    }
+
+    footer {
+        background-color: #000;
+    }
+
+    section h1 {
+        margin: 30px 0 20px 0;
+        /* top | right | bottom | left  */
+        font-size: 35px;
+        font-weight: 700;
+
+    }
+
+    .main-content {
+        flex-direction: column;
+
+    }
+
+    .wrapper .button {
+        display: block;
+        height: 60px;
+        width: 60px;
+        /* float: left; */
+        margin: 0 5px;
+        overflow: hidden;
+        background: white;
+        color: black;
+        border-radius: 50px;
+        cursor: pointer;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease-out;
+    }
+
+    .wrapper .button .icon {
+        display: inline-block;
+        height: 60px;
+        width: 60px;
+        text-align: center;
+        border-radius: 50px;
+        box-sizing: border-box;
+        line-height: 60px;
+        transition: all 0.3s ease-out;
+    }
+}

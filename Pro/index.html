@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taarangana</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("gZl-UDen4F9L2h8Eq");
+        })();
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1> Taarangana</h1>
+        <nav>
+            <ul>
+                <li><a href="#"> Home </a> </li>
+                <li><a href="#"> Events</a></li>
+                <li><a href="#"> Meet The Team</a></li>
+                <li> <a href="#">Pronite</a></li>
+                <li><a href="#"> Sponsers </a></li>
+                <li><a href="#">SCHEDULE</a></li>
+                <li> <a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+        <ion-icon name="menu-outline" id="iconbar" onclick="responsive_menu()"></ion-icon>
+
+    </header>
+    <main>
+        <section>
+            <h3>come join us in this wonderful journey!</h3>
+            <h1>First Step to Fun!! <br><span class="change_content"> </span> <span style="margin-top: -10px;">
+                    <ion-icon name="arrow-down-outline"></ion-icon> </span> </h1>
+            <!-- <p>"IGDTUW"</p> -->
+            <a href="/Users/abhiruchisarswat/Desktop/Web Development/Events&Fest/Events_T-23/index.html" class="btnone">Join Now</a>
+            <a href="https://forms.gle/Rny3RkeStHk5HjSX8" class="btntwo"> Register here</a>
+        </section>
+    </main>
+    <footer>
+        <div class="main-content">
+            <div class="left box">
+                <h2>About Us </h2>
+                <div class="content">
+                    <p>Taarangana, the annual cultural fest of IGDTUW (formerly IGIT), is the cultural fest of the only
+                        Women Technical University of India. The cultural fest over two days hosts a wide array of
+                        enthusiastic students who indulge in myriad activities to display and dabble with their
+                        creativity. The fest is an exquisite exposure of technical minds to their latent artistic
+                        skills. Multitudes of students swarm to participate and interact over interesting cultural
+                        events and some great food at IGDTUW. Taarangana has been escalating ever since its inception
+                        with more than 17 thousands of people attending the festival in its fourth edition.</p>
+                </div>
+                <hr>
+                <div class="wrapper">
+                    <div class="button">
+                        <div class="icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                        <span>Facebook</span>
+                    </div>
+                    <div class="button">
+                        <div class="icon">
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                        <span>Twitter</span>
+                    </div>
+                    <div class="button">
+                        <div class="icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <span>Instagram</span>
+                    </div>
+                    <div class="button">
+                        <div class="icon">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                        <span>YouTube</span>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="center box">
+                <h2>Address</h2>
+                <div class="content">
+                    <div class="place">
+                        <ion-icon name="location-outline"></ion-icon>
+                        <span class="text">  Kashmere Gate, New Delhi, Delhi</span>
+                    </div>
+                    <div class="phone">
+                        <ion-icon name="call-outline"></ion-icon>
+                        <span class="text"> 0011 2093 4567</span>
+                    </div>
+                    <div class="email">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <span class="text"> abc@gmail.com </span>
+                    </div>
+                </div>
+            </div> -->
+            <div class="right box">
+                <h2>Contact Us</h2>
+                <div class="content">
+                    <input type="text" id="fullName" placeholder="Full Name" required>
+                    <input type="email" id="email_id" placeholder="Email Id" required>
+                    <textarea placeholder="Message" name="" id="message" cols="20" rows="5" required></textarea>
+                    <button onclick="SendMail()">Send</button>
+                </div>
+                <hr>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
